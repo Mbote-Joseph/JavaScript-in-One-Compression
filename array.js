@@ -32,3 +32,41 @@ console.log(numbers); //(12) [100, 54, 78, 11, 22, 33, 45, 89, 36, 45, 78, 96]
 
 let test = numbers.join(", "); // Makes it one item.
 console.log(test); //100, 54, 78, 11, 22, 33, 45, 89, 36, 45, 78, 96
+
+// Array Iteration
+let carIds = [
+  { carId: 123, style: "Sedan" },
+  { carId: 456, style: "convertible" },
+  { carId: 789, style: "Sedan" },
+];
+carIds.forEach((car) => console.log(car));
+
+carIds.forEach((car, index) => console.log(car, index));
+
+// Array filtering
+let carIds = [
+  { carId: 123, style: "Sedan" },
+  { carId: 456, style: "convertible" },
+  { carId: 789, style: "Sedan" },
+];
+let convertibles = carIds.filter((car) => car.style === "convertible");
+
+console.log(convertibles);
+
+// Array Testing
+let carIds = [
+  { carId: 123, style: "Sedan" },
+  { carId: 456, style: "convertible" },
+  { carId: 789, style: "Sedan" },
+];
+let result = carIds.every((car) => car.carId > 0);
+console.log(result); //true/false
+
+// Locate for first Match
+let carIds = [
+  { carId: 123, style: "Sedan" },
+  { carId: 456, style: "convertible" },
+  { carId: 789, style: "Sedan" },
+];
+let car = carIds.find((car) => car.carId > 500);
+console.log(car);
