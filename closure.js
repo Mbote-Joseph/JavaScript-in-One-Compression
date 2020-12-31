@@ -11,3 +11,25 @@ let app = (function () {
   // This is the end of the closure.
 })();
 console.log(app.getId());
+
+// OR
+function closure() {
+  let name = "Mbote Joseph";
+  function sayMyName() {
+    console.log(name);
+  }
+  return sayMyName;
+}
+let value = closure();
+value(); //Mbote Joseph
+
+// Closure using Arrow functions
+let test = () => {
+  let school = "JKUAT";
+  let getSchool = () => {
+    console.log(school);
+  };
+  return getSchool;
+};
+let result = test();
+result(); //JKUAT
