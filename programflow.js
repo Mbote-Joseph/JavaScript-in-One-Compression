@@ -17,6 +17,7 @@ if (group < 5) {
 }
 
 // switch() statement
+// What happens when the break is not used there is what is call a fall-through and are the results in each case are returned.
 let country = "kenya";
 switch (country) {
   case "tanzania":
@@ -30,6 +31,22 @@ switch (country) {
     break;
   default:
     console.log("The country is not known");
+    break;
+}
+// If you do not want to use the break keyword you can always use the return keyword and will prevent fall-through too
+let countries = "kenya";
+switch (countries) {
+  case "tanzania":
+    return console.log("The capital city is Dar es saalam");
+
+  case "kenya":
+    return console.log("The capital city is Nairobi");
+
+  case "uganda":
+    return console.log("The capital city is Kampala");
+
+  default:
+    return console.log("The country is not known");
 }
 
 //for() loop

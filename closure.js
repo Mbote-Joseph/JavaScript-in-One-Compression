@@ -42,5 +42,5 @@ function addNumbers(x) {
 }
 let add = addNumbers(10);
 console.log(add(2));
-// Anaother weired way to call it is :-
+// Another weired way to call it is :-
 console.log(addNumbers(6)(7));
