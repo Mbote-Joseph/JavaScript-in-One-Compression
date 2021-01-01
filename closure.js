@@ -33,3 +33,14 @@ let test = () => {
 };
 let result = test();
 result(); //JKUAT
+
+// Another type of closure
+function addNumbers(x) {
+  return function (y) {
+    return x + y;
+  };
+}
+let add = addNumbers(10);
+console.log(add(2));
+// Anaother weired way to call it is :-
+console.log(addNumbers(6)(7));
