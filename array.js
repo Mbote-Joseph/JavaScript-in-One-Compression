@@ -70,3 +70,8 @@ let carIds = [
 ];
 let car = carIds.find((car) => car.carId > 500);
 console.log(car);
+
+// another way to declare an array
+let towns = new Array("Thika", "Nairobi", "Kisumu", "Naivasha", "Nakuru");
+console.log(towns);
+console.log(towns[0]);
