@@ -62,3 +62,17 @@ while (count <= 3) {
   console.log(count);
   count++;
 }
+
+const myStates = [
+  "Juja",
+  "Thika",
+  "Nairobi",
+  "Kisumu",
+  1998,
+  "Njambini",
+  "Naivasha",
+];
+for (let i = 0; i < myStates.length; i++) {
+  if (typeof myStates[i] !== "string") continue;
+  console.log(myStates[i]);
+}

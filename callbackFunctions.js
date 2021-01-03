@@ -9,3 +9,7 @@ console.log(results);
 // This helps to keep the code short.
 let isEvenNumber = [2, 3, 4, 5, 6, 7, 8].every((element) => element % 2 === 0);
 console.log(isEvenNumber);
+
+const myNumber = [4, 6, 9, 21, 34, 55, 67, 69, 89];
+myNumber[2] = 32;
+console.log(myNumber);
