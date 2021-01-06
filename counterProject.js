@@ -1,4 +1,4 @@
-let number = document.querySelector(".number");
+let number = document.querySelector(".counter");
 let followers = document.querySelector(".followers");
 let count = 0;
 
